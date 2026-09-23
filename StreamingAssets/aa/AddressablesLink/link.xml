@@ -1,0 +1,340 @@
+<linker>
+  <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="ACRoundedRectMask.RoundedRectMask2D" preserve="all" />
+    <type fullname="DragonBones.UnityArmatureComponent" preserve="all" />
+    <type fullname="DragonBones.UnityDragonBonesData" preserve="all" />
+    <type fullname="DragonBones.UnityUGUIDisplay" preserve="all" />
+    <type fullname="EpicToonFX.ETFXPitchRandomizer" preserve="all" />
+    <type fullname="Save.GameBootstrap" preserve="all" />
+    <type fullname="UI.DebuffPanelAnimation" preserve="all" />
+    <type fullname="UI.NewFeatureUnlockedAnimation" preserve="all" />
+    <type fullname="UI.QuestBadgeUI" preserve="all" />
+    <type fullname="UI.TextCompleteEventListener" preserve="all" />
+    <type fullname="UI.TextMirror" preserve="all" />
+    <type fullname="VideoCutsceneHandler" preserve="all" />
+    <type fullname="VideoPlayerFacade" preserve="all" />
+    <type fullname="WebGLVideoPlayer" preserve="all" />
+    <type fullname="DragonBones.UnityDragonBonesData/TextureAtlas" preserve="nothing" serialized="true" />
+    <type fullname="UI.TextCompleteEventListener/EventBinding" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="DialogueSystem, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="DialoguePanelAutoSize" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Combat.Dice.DiceCardFx" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Combat.Dice.DiceCombatController" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Combat.Dice.DiceCombatUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Combat.Dice.DiceFlyingText" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Combat.Dice.DiceHpBar" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Combat.Dice.DiceRenderTextureInput" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Combat.Dice.DiceView" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Combat.Dice.PartnerDefinition" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.DialogueUIConfig" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.DialogueVariableSet" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.EnemyDefinition" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.ExperienceLevelConfig" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.GameEventSet" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.LevelUpRewardCatalog" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.MapConfig" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.PlayerStats" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.SkillCheckChanceBalance" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.StatDependencySet" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Cutscenes.CutsceneActor" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Cutscenes.CutscenePoint" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Cutscenes.CutsceneSequence" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.DialogueGraph" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Items.ResourceDatabase" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Localization.LocalizationBootstrap" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Localization.LocalizationConfig" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ButtonNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.CombatNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ConditionNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.DialogueOnTheMapNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.DirectionChoiceNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.EndNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.MechanicNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ShootingNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.SituationNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.SkillCheckNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.StartNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.TransitionNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.TutorialNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.VideoCutsceneNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.VisualChoiceNode" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.Runtime.DialoguePlayer" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ActionCardsLayoutFitter" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ActionCardUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.AnswerButtonUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.BackgroundScroller" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ButtonNodeUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.CharacterUpgradeWindowUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ClickerMechanicUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ClickerTargetUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ClickPointUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.CombatUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.CombatWinWindowUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.CoverUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.DialogueUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.DiggingMechanicUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.DirectionChoiceMechanicUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.DoorUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.DrawerHandleUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.EnemySlotUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.EquipmentSlotUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.GlowPulseController" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.HeartbeatEffect" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.HeavyBreathingEffect" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.InventoryItemSlotUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.InventoryUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ItemApplicationMechanicUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ItemApplicationTarget" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ItemPopupStatImpactUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ItemPopupUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ItemSelectionMechanicUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.LevelUpStatRowUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.LevelUpWindowUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.MapBulletLoopController" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.MapCharacterController" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.MapFogReveal" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.MapInteractionPoint" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.MapMechanicUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.MapShieldController" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.MapViewController" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.MapWaypoint" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.MapZoomPoint" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.MechanicUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.MultiClickerMechanicUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.NamePlateAutoWidth" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.NotificationUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ObjectAnimation" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ResourceUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ReturnAnswerButtonUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.RewardAnswerButtonUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.SelectableClickerItemUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.SelectableItemUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ShootingMechanicUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ShootingTarget" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.SituationLayoutRebuilder" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.SituationUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.SkillCheckStatsBlur" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.SkillCheckUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.SpeechBubbleOnScene" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.StatBoostAnswerButtonUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.StatsPanelUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.TutorialHand" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.TutorialNodeUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.TutorialObject" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.TypingDotsBubble" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.UIBlur" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.VHSGlitchController" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.VignetteController" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.VisualCardUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.VisualChoiceUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ZoomableItemUI" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ZoomMechanicUI" preserve="all" />
+    <type fullname="Items.ItemDatabase" preserve="all" />
+    <type fullname="Items.WeaponShootingConfig" preserve="all" />
+    <type fullname="ShineEffect" preserve="all" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.MapBulletLoopController/BulletSource" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.AnswerButtonBackground" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.AnswerButtonBackgroundsConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.ButtonPulseAnimConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.ButtonPulseCalmAnimConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.CombatWinWindowAnimConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.DiggingCoverRemoveAnimationConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.ItemPickupAnimConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.LevelUpRewardDefinition" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.LevelUpRewardGrant" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.MapChoiceAnimConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.MapIPRevealAnimConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.MapZoomConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.NotificationAnimConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.ShootingAnimConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.SkillCheckAnimConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.ZoomItemRevealAnimConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Localization.LocalizedEntry" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Localization.LocalizedField" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Combat.Dice.DiceCardFx/ComboTier" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Combat.Dice.DiceCombatUI/DescriptionSlot" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Combat.Dice.DiceCombatUI/EffectIcon" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Combat.Dice.DiceCombatUI/StatTarget" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Content.AssetReferenceDialogueGraph" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.CharacterUpgradeWindowUI/UpgradeStatRow" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.CombatWinWindowUI/StatsVariantRefs" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.CombatWinWindowUI/VariantRefs" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.GlowPulseController/GlowPreset" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.ItemPopupStatImpactConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.RarityBackground" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.StatBarUI" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.StatFieldEntry" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.StatIconMap" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.TutorialStep" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.UI.RewardButtonStateRefs" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.Condition" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.ConditionGroup" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.ExperienceLevelDefinition" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.GameEventDefinition" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.GameEventStatModifier" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.LevelUpStatUpgrade" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.SkillCheckChanceBalance/ChanceTier" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.StatEntry" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.VariableDef" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Items.ResourceDefinition" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Localization.NodeTypePrefix" preserve="nothing" serialized="true" />
+    <type fullname="Items.ArmorDef" preserve="nothing" serialized="true" />
+    <type fullname="Items.FoodDef" preserve="nothing" serialized="true" />
+    <type fullname="Items.ItemStatModifier" preserve="nothing" serialized="true" />
+    <type fullname="Items.MedicineDef" preserve="nothing" serialized="true" />
+    <type fullname="Items.MeleeWeaponDef" preserve="nothing" serialized="true" />
+    <type fullname="Items.ModifierDef" preserve="nothing" serialized="true" />
+    <type fullname="Items.OtherItemDef" preserve="nothing" serialized="true" />
+    <type fullname="Items.RangedWeaponDef" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.MapStartAnimConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Core.StatModifier" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.Answer" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.AnswerCheckData" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ClickerMechanicConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ComparisonType" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ConditionBranch" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.DiggingMechanicConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.EnemyConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ForceOutcome" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.GroundItemData" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ItemApplicationMechanicConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ItemChange" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ItemSelectionMechanicConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.MapPointWaypointRoute" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.MultiClickerMechanicConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.SpeechBubbleData" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ThresholdMode" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.VisualCard" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ZoomItemDescriptionEntry" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ZoomMechanicConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.MapDialogueLine" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Cutscenes.CutsceneStep" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ItemSelectionOption" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.DoorConfig" preserve="nothing" serialized="true" />
+    <type fullname="DialogueSystem.DialogueSystem.Nodes.ResourceConfig" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="LeTai.TrueShadow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="LeTai.TrueShadow.TrueShadow" preserve="all" />
+  </assembly>
+  <assembly fullname="Quests, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Quests.QuestDatabase" preserve="all" />
+    <type fullname="Quests.QuestManager" preserve="all" />
+    <type fullname="Quests.QuestDef" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.LegacyResourcesProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.SceneProvider" preserve="all" />
+  </assembly>
+  <assembly fullname="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="TMPro.TextMeshProUGUI" preserve="all" />
+    <type fullname="TMPro.TMP_FontAsset" preserve="all" />
+    <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.KerningTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_GlyphAdjustmentRecord" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_GlyphPairAdjustmentRecord" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_GlyphValueRecord" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Animator" preserve="all" />
+    <type fullname="UnityEngine.Avatar" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AudioClip" preserve="all" />
+    <type fullname="UnityEngine.AudioListener" preserve="all" />
+    <type fullname="UnityEngine.AudioSource" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Camera" preserve="all" />
+    <type fullname="UnityEngine.GameObject" preserve="all" />
+    <type fullname="UnityEngine.Light" preserve="all" />
+    <type fullname="UnityEngine.LightmapSettings" preserve="all" />
+    <type fullname="UnityEngine.Material" preserve="all" />
+    <type fullname="UnityEngine.Mesh" preserve="all" />
+    <type fullname="UnityEngine.MeshFilter" preserve="all" />
+    <type fullname="UnityEngine.MeshRenderer" preserve="all" />
+    <type fullname="UnityEngine.Object" preserve="all" />
+    <type fullname="UnityEngine.RectTransform" preserve="all" />
+    <type fullname="UnityEngine.RenderSettings" preserve="all" />
+    <type fullname="UnityEngine.RenderTexture" preserve="all" />
+    <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.Sprite" preserve="all" />
+    <type fullname="UnityEngine.TextAsset" preserve="all" />
+    <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.TrailRenderer" preserve="all" />
+    <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.ParticleSystem" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.BoxCollider" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Font" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all" />
+    <type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="all" />
+    <type fullname="UnityEngine.UI.AspectRatioFitter" preserve="all" />
+    <type fullname="UnityEngine.UI.Button" preserve="all" />
+    <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
+    <type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all" />
+    <type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all" />
+    <type fullname="UnityEngine.UI.GridLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.Image" preserve="all" />
+    <type fullname="UnityEngine.UI.LayoutElement" preserve="all" />
+    <type fullname="UnityEngine.UI.Mask" preserve="all" />
+    <type fullname="UnityEngine.UI.Outline" preserve="all" />
+    <type fullname="UnityEngine.UI.RawImage" preserve="all" />
+    <type fullname="UnityEngine.UI.RectMask2D" preserve="all" />
+    <type fullname="UnityEngine.UI.ScrollRect" preserve="all" />
+    <type fullname="UnityEngine.UI.Slider" preserve="all" />
+    <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
+    <type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.ColorBlock" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Canvas" preserve="all" />
+    <type fullname="UnityEngine.CanvasGroup" preserve="all" />
+    <type fullname="UnityEngine.CanvasRenderer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.VideoModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.Video.VideoPlayer" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.TextCoreFontEngineModule">
+    <type fullname="UnityEngine.TextCore.FaceInfo" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.Glyph" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphMetrics" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.TextCore.GlyphRect" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="XNode">
+    <type fullname="XNode.Node/NodePortDictionary" preserve="nothing" serialized="true" />
+    <type fullname="XNode.NodePort" preserve="nothing" serialized="true" />
+    <type fullname="XNode.NodePort/PortConnection" preserve="nothing" serialized="true" />
+  </assembly>
+</linker>

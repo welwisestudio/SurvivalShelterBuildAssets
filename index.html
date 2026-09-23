@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>My project</title>
+        <style>
+            * { box-sizing: border-box; margin: 0; padding: 0; }
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                background: #000 url('Background.jpg') center center / cover no-repeat;
+            }
+
+            #game-wrapper {
+                position: absolute;
+                overflow: hidden;
+            }
+
+            /* Remove focus outline on canvas */
+            #unity-canvas {
+                position: absolute;
+                top: 0; left: 0;
+                width: 100%;
+                height: 100%;
+                display: block;
+                background: #000;
+                outline: none;
+            }
+
+            /* ── Loading screen ── */
+            #loading-screen {
+                position: absolute;
+                top: 0; left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 32px;
+                z-index: 10;
+                overflow: hidden;
+                transition: opacity 0.6s ease;
+            }
+
+            #loading-screen.hidden {
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            /* Animated gradient background */
+            #loading-bg {
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+                background-size: 400% 400%;
+                animation: gradientShift 6s ease infinite;
+            }
+
+            @keyframes gradientShift {
+                0%   { background-position: 0%   50%; }
+                50%  { background-position: 100% 50%; }
+                100% { background-position: 0%   50%; }
+            }
+
+            /* Soft glow blob behind icon */
+            #loading-glow {
+                position: absolute;
+                width: 340px;
+                height: 340px;
+                border-radius: 50%;
+                background: radial-gradient(circle, rgba(120,80,255,0.35) 0%, transparent 70%);
+                animation: glowPulse 3s ease-in-out infinite;
+                pointer-events: none;
+            }
+
+            @keyframes glowPulse {
+                0%, 100% { transform: scale(1);   opacity: 0.7; }
+                50%       { transform: scale(1.2); opacity: 1;   }
+            }
+
+            /* Content layer */
+            #loading-content {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 32px;
+            }
+
+            /* Icon */
+            #game-icon {
+                width: 160px;
+                height: 160px;
+                border-radius: 32px;
+                object-fit: cover;
+                box-shadow: 0 0 0 3px rgba(255,255,255,0.12), 0 16px 48px rgba(0,0,0,0.6);
+                animation: iconFloat 3s ease-in-out infinite;
+            }
+
+            @keyframes iconFloat {
+                0%, 100% { transform: translateY(0px);  }
+                50%       { transform: translateY(-8px); }
+            }
+
+            /* Progress bar */
+            #progress-bar-wrapper {
+                width: 180px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            #progress-bar-track {
+                width: 100%;
+                height: 6px;
+                background: rgba(255,255,255,0.12);
+                border-radius: 3px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            #progress-bar-fill {
+                height: 100%;
+                width: 0%;
+                border-radius: 3px;
+                background: linear-gradient(90deg, #a78bfa, #60a5fa);
+                transition: width 0.25s ease;
+                position: relative;
+            }
+
+            /* Shimmer on the fill */
+            #progress-bar-fill::after {
+                content: '';
+                position: absolute;
+                top: 0; left: -60px;
+                width: 60px;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+                animation: shimmer 1.4s ease infinite;
+            }
+
+            @keyframes shimmer {
+                0%   { left: -60px; }
+                100% { left: 100%;  }
+            }
+
+            /* Dots */
+            #loading-dots {
+                display: flex;
+                gap: 6px;
+            }
+
+            #loading-dots span {
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: rgba(255,255,255,0.4);
+                animation: dotBounce 1.2s ease-in-out infinite;
+            }
+
+            #loading-dots span:nth-child(2) { animation-delay: 0.2s; }
+            #loading-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+            @keyframes dotBounce {
+                0%, 80%, 100% { transform: scale(1);    opacity: 0.4; }
+                40%            { transform: scale(1.4);  opacity: 1;   }
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="game-wrapper">
+            <canvas id="unity-canvas" tabindex="-1"></canvas>
+
+            <div id="loading-screen">
+                <div id="loading-bg"></div>
+                <div id="loading-glow"></div>
+
+                <div id="loading-content">
+                    <img id="game-icon" src="Icon.jpg" alt="">
+
+                    <div id="progress-bar-wrapper">
+                        <div id="progress-bar-track">
+                            <div id="progress-bar-fill"></div>
+                        </div>
+                        <div id="loading-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var unityInstance = null;
+            var wrapper         = document.getElementById('game-wrapper');
+            var canvas          = document.getElementById('unity-canvas');
+            var loadingScreen   = document.getElementById('loading-screen');
+            var progressBarFill = document.getElementById('progress-bar-fill');
+
+            var TARGET_ASPECT = 10 / 21;
+
+            function getViewportSize() {
+                var viewport = window.visualViewport;
+                return {
+                    width: Math.round((viewport && viewport.width) || window.innerWidth || document.documentElement.clientWidth || 0),
+                    height: Math.round((viewport && viewport.height) || window.innerHeight || document.documentElement.clientHeight || 0)
+                };
+            }
+
+            function resizeCanvas() {
+                var viewportSize = getViewportSize();
+                var screenW = viewportSize.width;
+                var screenH = viewportSize.height;
+                if (screenW <= 0 || screenH <= 0) return;
+
+                var screenAspect = screenW / screenH;
+
+                var w, h, left, top;
+                if (screenAspect > TARGET_ASPECT) {
+                    h = screenH;
+                    w = Math.round(screenH * TARGET_ASPECT);
+                } else {
+                    w = screenW;
+                    h = Math.round(screenW / TARGET_ASPECT);
+                }
+
+                left = Math.round((screenW - w) / 2);
+                top = Math.round((screenH - h) / 2);
+
+                wrapper.style.width  = w + 'px';
+                wrapper.style.height = h + 'px';
+                wrapper.style.left   = left + 'px';
+                wrapper.style.top    = top + 'px';
+            }
+
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+            if (window.visualViewport) {
+                window.visualViewport.addEventListener('resize', resizeCanvas);
+                window.visualViewport.addEventListener('scroll', resizeCanvas);
+            }
+            if (typeof ResizeObserver === 'function') {
+                new ResizeObserver(resizeCanvas).observe(document.documentElement);
+            }
+
+            if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                var meta = document.createElement('meta');
+                meta.name = 'viewport';
+                meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+                document.head.appendChild(meta);
+            }
+
+            // Focus canvas without showing outline
+            window.addEventListener('pointerdown', function() { canvas.focus({ preventScroll: true }); });
+
+            window.addEventListener('wheel',       function(e) { e.preventDefault(); }, { passive: false });
+            window.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+
+            var loaderScript = document.createElement('script');
+            loaderScript.src = 'Build/WebGL.loader.js';
+            var nonceScript = document.querySelector('script[nonce]');
+            loaderScript.nonce = nonceScript ? nonceScript.nonce : '';
+            loaderScript.onload = function() {
+                createUnityInstance(canvas, {
+                    dataUrl:            'Build/WebGL.data.unityweb',
+                    frameworkUrl:       'Build/WebGL.framework.js.unityweb',
+                    codeUrl:            'Build/WebGL.wasm.unityweb',
+                    streamingAssetsUrl: 'StreamingAssets',
+                    companyName:        'DefaultCompany',
+                    productName:        'My project',
+                    productVersion:     '1.0',
+                    matchWebGLToCanvasSize: true,
+                }, function(progress) {
+                    progressBarFill.style.width = (progress * 100) + '%';
+                })
+                .then(function(instance) {
+                    unityInstance = instance;
+                    resizeCanvas();
+                    window.dispatchEvent(new Event('resize'));
+                    setTimeout(function() { resizeCanvas(); window.dispatchEvent(new Event('resize')); }, 100);
+                    setTimeout(function() { resizeCanvas(); window.dispatchEvent(new Event('resize')); }, 500);
+                    loadingScreen.classList.add('hidden');
+                    setTimeout(function() { loadingScreen.style.display = 'none'; }, 650);
+                    canvas.focus({ preventScroll: true });
+                })
+                .catch(function(err) {
+                    console.error(err);
+                });
+            };
+            document.body.appendChild(loaderScript);
+        </script>
+    </body>
+</html>
